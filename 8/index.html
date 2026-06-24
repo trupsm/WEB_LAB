@@ -2,7 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>Average Marks</title>
-<script type="text/javascript">
+</head>
+<body>
+<h2>Student Marks Form</h2>
+Register No:<input type="text" id="reg" /><br /><br />
+Subject Code:<input type="text" id="sub" /><br /><br />
+Test 1:<input type="text" id="t1" /><br /><br />
+Test 2:<input type="text" id="t2" /><br /><br />
+Test 3:<input type="text" id="t3" /><br /><br />
+<input type="button" value="Average" onclick="average()" />
+<script>
 function average()
 {
     var reg = document.getElementById("reg").value;
@@ -20,14 +29,5 @@ function average()
     alert("Average of Best Two Tests = " + avg);
 }
 </script>
-</head>
-<body>
-<h2>Student Marks Form</h2>
-Register No:<input type="text" id="reg" /><br /><br />
-Subject Code:<input type="text" id="sub" /><br /><br />
-Test 1:<input type="text" id="t1" /><br /><br />
-Test 2:<input type="text" id="t2" /><br /><br />
-Test 3:<input type="text" id="t3" /><br /><br />
-<input type="button" value="Calculate Average" onclick="average()" />
 </body>
 </html>

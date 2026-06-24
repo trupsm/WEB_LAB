@@ -20,9 +20,9 @@ if (isset($_POST['num']) && $_POST['num'] !== "") {
     }
   }
   if ($isPrime) {
-    echo "<p>$n is a Prime number.</p>";
+    echo "$n is a Prime number.";
   } else {
-    echo "<p>$n is not a Prime number.</p>";
+    echo "$n is not a Prime number.";
   }
 }
 ?>
