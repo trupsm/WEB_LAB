@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Registration Form</title>
+<script>
+function validate()
+{
+    var uid = document.getElementById("uid").value;
+    var name = document.getElementById("name").value;
+    var pass = document.getElementById("pass").value;
+    var email = document.getElementById("email").value;
+    if(uid.length < 5 || uid.length > 12)
+    {
+        alert("User ID must be 5 to 12 characters");
+        return;
+    }
+    if(!/^[A-Za-z ]+$/.test(name) || name.length < 15)
+    {
+        alert("Name should contain only alphabets and minimum 15 characters");
+        return;
+    }
+    if(!/^(?=.*[A-Z])(?=.*[0-9])(?=.*[\W]).{8,}$/.test(pass))
+    {
+        alert("Invalid Password");
+        return;
+    }
+    if(!/^\S+@\S+\.\S+$/.test(email))
+    {
+        alert("Invalid Email");
+        return;
+    }
+    alert("Registration Successful");
+}
+</script>
+</head>
+<body>
+<h2>Registration Form</h2>
+User ID:<input type="text" id="uid" /><br /><br />
+Name:<input type="text" id="name" /><br /><br />
+Password:<input type="password" id="pass" /><br /><br />
+Email:<input type="text" id="email" /><br /><br />
+<input type="button" value="Submit" onclick="validate()" />
+</body>
+</html>
+
+//
+Validation done:
+User ID → 5 to 12 characters
+Name → only alphabets, minimum 15 characters
+Password → at least 8 characters, one uppercase letter, one number, one special character
+Email → valid email format
+Displays alerts for errors and success.
+//

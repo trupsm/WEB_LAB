@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+</head>
+<body>
+<h2>Form</h2>
+Name: <input type="text" id="name"><br><br>
+Email: <input type="text" id="email"><br><br>
+Mobile: <input type="text" id="mobile"><br><br>
+Gender:
+<input type="radio" name="g" value="Male">Male
+<input type="radio" name="g" value="Female">Female
+<br><br>
+Favorite Color:
+<input type="text" id="color"><br><br>
+<button onclick="show()">Submit</button>
+<br><br>
+<textarea id="result" rows="5" cols="30"></textarea>
+<script>
+function show() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var mobile = document.getElementById("mobile").value;
+    var color = document.getElementById("color").value;
+    if(name=="" || email=="" || mobile=="" || color=="") {
+        alert("Fill all fields");
+        return;
+    }
+    document.getElementById("result").value =
+    "Name: " + name +
+    "\nEmail: " + email +
+    "\nMobile: " + mobile +
+    "\nColor: " + color;
+}
+</script>
+</body>
+</html>
