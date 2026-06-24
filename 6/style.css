@@ -1,0 +1,27 @@
+body{
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+p{
+    color: darkgreen;
+    font-size: 18px;
+    text-align: justify;
+}
+h3{
+    color: maroon;
+}
+ul{
+    color: black;
+    font-size: 17px;
+}
+a{
+    background-color: orange;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+a:hover{
+    background-color: green;
+}
