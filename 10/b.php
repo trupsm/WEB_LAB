@@ -3,7 +3,7 @@
 <body>
 <form method="post" action="">
   Enter a number: <input type="text" name="num" />
-  <input type="submit" value="Check" />
+  <input type="submit" value="Check">
 </form>
 <?php
 if (isset($_POST['num']) && $_POST['num'] !== "") {
